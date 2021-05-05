@@ -1,0 +1,92 @@
+
+body{
+  font-family: "poppins", sans-serif;
+  background-color: #16192c;
+  text-align: center;
+  color: #e427c4;
+  font-size: 28px;
+}
+
+.share{
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin-top: -40px;
+  border-radius: 80px;
+}
+
+.share a {
+  width: 80px;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  background-color: #fff;
+  color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  margin: 0 -20px;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.share span{
+  width: 300px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  pointer-events: none;
+  color: #16192c;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.share a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+
+.share a:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+
+.share a:nth-child(1):hover {
+  background-color: #375daf;
+}
+
+.share a:nth-child(2):hover {
+  background-color: #33beff;
+}
+.share a:nth-child(3):hover {
+  background-color: #e42785;
+}
+.share a:nth-child(4):hover {
+  background-color: #ce1d1d;
+}
+
+.share:hover span{
+  opacity: 0;
+}
+
+.share nav{
+  font-size: 0;
+}
+
+.share:hover a {
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #16192c;
+  font-size: 28px;
+}
+
+.share:hover a:hover{
+  color: #fff;
+}
